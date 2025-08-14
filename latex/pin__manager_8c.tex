@@ -1,0 +1,169 @@
+\doxysection{Bulb\+\_\+\+Holder\+\_\+code/\+IR\+\_\+\+LIGHT\+\_\+\+VER4(pic10f1572).X/mcc\+\_\+generated\+\_\+files/pin\+\_\+manager.c File Reference}
+\hypertarget{pin__manager_8c}{}\label{pin__manager_8c}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/pin\_manager.c@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/pin\_manager.c}}
+{\ttfamily \#include "{}pin\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}mcc.\+h"{}}\newline
+Include dependency graph for pin\+\_\+manager.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pin__manager_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pin__manager_8c_a50357774183a136d9490f64ad0d5c6cb}{PIN\+\_\+\+MANAGER\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{pin__manager_8c_a6ff320d017cf9b99ba9045f24d7ec896}{PIN\+\_\+\+MANAGER\+\_\+\+IOC}} (void)
+\item 
+void \mbox{\hyperlink{pin__manager_8c_aee544b5ff08363d3bc72fc876be76eb3}{IOCAF0\+\_\+\+ISR}} (void)
+\item 
+void \mbox{\hyperlink{pin__manager_8c_a47be93dc572229a90c3c39fd802cd4c3}{IOCAF0\+\_\+\+Set\+Interrupt\+Handler}} (void(\texorpdfstring{$\ast$}{*}Interrupt\+Handler)(void))
+\item 
+void \mbox{\hyperlink{pin__manager_8c_a90d9184ba47473855ee66616bcd28a69}{IOCAF0\+\_\+\+Default\+Interrupt\+Handler}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{pin__manager_8c_aa50dcc925c0677206a7ec31ae5876cf3}{Flag\+\_\+\+Fre\+Counter}} = false
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{pin__manager_8c_ad640af04cf3837121bf3230f4a1a7d02}{IOCAF0\+\_\+\+Interrupt\+Handler}} )(void)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{pin__manager_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{pin__manager_8c_a90d9184ba47473855ee66616bcd28a69}\index{pin\_manager.c@{pin\_manager.c}!IOCAF0\_DefaultInterruptHandler@{IOCAF0\_DefaultInterruptHandler}}
+\index{IOCAF0\_DefaultInterruptHandler@{IOCAF0\_DefaultInterruptHandler}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{IOCAF0\_DefaultInterruptHandler()}{IOCAF0\_DefaultInterruptHandler()}}
+{\footnotesize\ttfamily \label{pin__manager_8c_a90d9184ba47473855ee66616bcd28a69} 
+void IOCAF0\+\_\+\+Default\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Default interrupt handler for IOCAF5 Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pin__manager_8c_a90d9184ba47473855ee66616bcd28a69_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pin__manager_8c_aee544b5ff08363d3bc72fc876be76eb3}\index{pin\_manager.c@{pin\_manager.c}!IOCAF0\_ISR@{IOCAF0\_ISR}}
+\index{IOCAF0\_ISR@{IOCAF0\_ISR}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{IOCAF0\_ISR()}{IOCAF0\_ISR()}}
+{\footnotesize\ttfamily \label{pin__manager_8c_aee544b5ff08363d3bc72fc876be76eb3} 
+void IOCAF0\+\_\+\+ISR (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+IOCAF5 Interrupt Service Routine Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{pin__manager_8c_aee544b5ff08363d3bc72fc876be76eb3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pin__manager_8c_a47be93dc572229a90c3c39fd802cd4c3}\index{pin\_manager.c@{pin\_manager.c}!IOCAF0\_SetInterruptHandler@{IOCAF0\_SetInterruptHandler}}
+\index{IOCAF0\_SetInterruptHandler@{IOCAF0\_SetInterruptHandler}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{IOCAF0\_SetInterruptHandler()}{IOCAF0\_SetInterruptHandler()}}
+{\footnotesize\ttfamily \label{pin__manager_8c_a47be93dc572229a90c3c39fd802cd4c3} 
+void IOCAF0\+\_\+\+Set\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*}}]{Interrupt\+Handler~}{)(void)}\end{DoxyParamCaption})}
+
+Allows selecting an interrupt handler for IOCAF5 at application runtime Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pin__manager_8c_a47be93dc572229a90c3c39fd802cd4c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pin__manager_8c_a50357774183a136d9490f64ad0d5c6cb}\index{pin\_manager.c@{pin\_manager.c}!PIN\_MANAGER\_Initialize@{PIN\_MANAGER\_Initialize}}
+\index{PIN\_MANAGER\_Initialize@{PIN\_MANAGER\_Initialize}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_MANAGER\_Initialize()}{PIN\_MANAGER\_Initialize()}}
+{\footnotesize\ttfamily \label{pin__manager_8c_a50357774183a136d9490f64ad0d5c6cb} 
+void PIN\+\_\+\+MANAGER\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Param none @\+Returns none @\+Description GPIO and peripheral I/O initialization @\+Example \doxylink{pin__manager_8h_a50357774183a136d9490f64ad0d5c6cb}{PIN\+\_\+\+MANAGER\+\_\+\+Initialize()}; LATx registers
+
+TRISx registers
+
+ANSELx registers
+
+WPUx registers
+
+ODx registers
+
+SLRCONx registers
+
+INLVLx registers
+
+APFCONx registers
+
+IOCx registersHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pin__manager_8c_a50357774183a136d9490f64ad0d5c6cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pin__manager_8c_a50357774183a136d9490f64ad0d5c6cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pin__manager_8c_a6ff320d017cf9b99ba9045f24d7ec896}\index{pin\_manager.c@{pin\_manager.c}!PIN\_MANAGER\_IOC@{PIN\_MANAGER\_IOC}}
+\index{PIN\_MANAGER\_IOC@{PIN\_MANAGER\_IOC}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_MANAGER\_IOC()}{PIN\_MANAGER\_IOC()}}
+{\footnotesize\ttfamily \label{pin__manager_8c_a6ff320d017cf9b99ba9045f24d7ec896} 
+void PIN\+\_\+\+MANAGER\+\_\+\+IOC (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Param none @\+Returns none @\+Description Interrupt on Change Handling routine @\+Example \doxylink{pin__manager_8h_a6ff320d017cf9b99ba9045f24d7ec896}{PIN\+\_\+\+MANAGER\+\_\+\+IOC()}; Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{pin__manager_8c_a6ff320d017cf9b99ba9045f24d7ec896_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{pin__manager_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{pin__manager_8c_aa50dcc925c0677206a7ec31ae5876cf3}\index{pin\_manager.c@{pin\_manager.c}!Flag\_FreCounter@{Flag\_FreCounter}}
+\index{Flag\_FreCounter@{Flag\_FreCounter}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{Flag\_FreCounter}{Flag\_FreCounter}}
+{\footnotesize\ttfamily \label{pin__manager_8c_aa50dcc925c0677206a7ec31ae5876cf3} 
+bool Flag\+\_\+\+Fre\+Counter = false}
+
+Generated Pin Manager File
+
+Company\+: Microchip Technology Inc.
+
+File Name\+: \doxylink{pin__manager_8c}{pin\+\_\+manager.\+c}
+
+Summary\+: This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+Description\+: This header file provides implementations for pin APIs for all pins selected in the GUI. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+0 Device \+: PIC12\+F1572 Driver Version \+: 2.\+11 The generated drivers are tested against the following\+: Compiler \+: XC8 2.\+10 and above MPLAB \+: MPLAB X 5.\+35
+
+Copyright (c) 2013 -\/ 2015 released Microchip Technology Inc. All rights reserved. \Hypertarget{pin__manager_8c_ad640af04cf3837121bf3230f4a1a7d02}\index{pin\_manager.c@{pin\_manager.c}!IOCAF0\_InterruptHandler@{IOCAF0\_InterruptHandler}}
+\index{IOCAF0\_InterruptHandler@{IOCAF0\_InterruptHandler}!pin\_manager.c@{pin\_manager.c}}
+\doxysubsubsection{\texorpdfstring{IOCAF0\_InterruptHandler}{IOCAF0\_InterruptHandler}}
+{\footnotesize\ttfamily \label{pin__manager_8c_ad640af04cf3837121bf3230f4a1a7d02} 
+void(\texorpdfstring{$\ast$}{*} IOCAF0\+\_\+\+Interrupt\+Handler) (void) (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Summary Dynamic Interrupt Handler for IOCAF5 pin
+
+@\+Description This is a dynamic interrupt handler to be used together with the IOCAF5\+\_\+\+Set\+Interrupt\+Handler() method. This handler is called every time the IOCAF5 ISR is executed and allows any function to be registered at runtime.
+
+@\+Preconditions Pin Manager intializer called
+
+@\+Returns None.
+
+@\+Param None.
+
+@\+Example \doxylink{pin__manager_8h_a50357774183a136d9490f64ad0d5c6cb}{PIN\+\_\+\+MANAGER\+\_\+\+Initialize()}; IOCAF5\+\_\+\+Set\+Interrupt\+Handler(\+IOCAF5\+\_\+\+Interrupt\+Handler); 

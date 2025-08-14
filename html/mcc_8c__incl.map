@@ -1,0 +1,24 @@
+<map id="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/mcc.c" name="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/mcc.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="238,5,436,64"/>
+<area shape="rect" id="Node000002" href="$mcc_8h.html" title=" " alt="" coords="309,112,366,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,64,340,96,335,96,335,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="77,261,123,288"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,130,237,134,147,144,65,161,34,174,14,188,9,197,9,206,19,224,39,241,64,255,62,259,36,245,15,227,3,207,4,196,10,185,31,169,63,156,146,138,236,129,308,125"/>
+<area shape="rect" id="Node000004" href="$device__config_8h.html" title=" " alt="" coords="24,187,136,213"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="309,137,140,185,139,179,307,132"/>
+<area shape="rect" id="Node000005" href="$pin__manager_8h.html" title=" " alt="" coords="160,187,266,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="317,142,249,181,246,176,314,137"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="305,261,369,288"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="338,139,332,187,335,246,330,246,327,187,332,139"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="537,261,612,288"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="366,125,437,129,526,139,609,156,641,169,662,185,668,195,669,206,659,225,641,242,618,256,615,252,637,237,655,221,663,205,663,197,658,188,638,174,608,161,526,144,437,134,366,130"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="424,187,488,213"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="359,137,424,176,421,181,356,141"/>
+<area shape="rect" id="Node000009" href="$interrupt__manager_8h.html" title=" " alt="" coords="512,187,648,213"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="367,133,524,179,522,184,366,138"/>
+<area shape="rect" id="Node000010" href="$tmr0_8h.html" title=" " alt="" coords="341,187,400,213"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="345,138,361,171,356,174,341,140"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="195,216,134,255,131,250,192,212"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="367,215,352,248,347,246,362,213"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="401,209,525,253,524,258,399,214"/>
+</map>

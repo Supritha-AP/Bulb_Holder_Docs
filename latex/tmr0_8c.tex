@@ -1,0 +1,187 @@
+\doxysection{Bulb\+\_\+\+Holder\+\_\+code/\+IR\+\_\+\+LIGHT\+\_\+\+VER4(pic10f1572).X/mcc\+\_\+generated\+\_\+files/tmr0.c File Reference}
+\hypertarget{tmr0_8c}{}\label{tmr0_8c}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/tmr0.c@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/tmr0.c}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include "{}tmr0.\+h"{}}\newline
+Include dependency graph for tmr0.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{tmr0_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tmr0_8c_a73398a18b711af030af4db3c4c6c15e1}{TMR0\+\_\+\+Initialize}} (void)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{tmr0_8c_a091fd68f48dfccc6890ab47872b0e551}{TMR0\+\_\+\+Read\+Timer}} (void)
+\item 
+void \mbox{\hyperlink{tmr0_8c_a951111850fea5583b9f98b566b2e4508}{TMR0\+\_\+\+Write\+Timer}} (uint8\+\_\+t timer\+Val)
+\item 
+void \mbox{\hyperlink{tmr0_8c_a61659c2dc0ff29595abe23b24cf81d14}{TMR0\+\_\+\+Reload}} (void)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{tmr0_8c_a3090c3e2bcc310ef2111cd0db99090c3}{get\+\_\+\+TIMER0\+Status}} (void)
+\item 
+void \mbox{\hyperlink{tmr0_8c_a8a465e070e24fe06a488f952b089886d}{TMR0\+\_\+\+ISR}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{tmr0_8c_aee53ca6ad8ef9a518fdc9a0a8af1fe91}{timer0\+Reload\+Val}}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{tmr0_8c_a1a08a465823afecd9ccddf909acf1fc5}{V\+\_\+\+COUNTER\+\_\+1ms}} = 0\+X00
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{tmr0_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{tmr0_8c_a3090c3e2bcc310ef2111cd0db99090c3}\index{tmr0.c@{tmr0.c}!get\_TIMER0Status@{get\_TIMER0Status}}
+\index{get\_TIMER0Status@{get\_TIMER0Status}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{get\_TIMER0Status()}{get\_TIMER0Status()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a3090c3e2bcc310ef2111cd0db99090c3} 
+uint32\+\_\+t get\+\_\+\+TIMER0\+Status (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+TMR0 Generated Driver API Header File
+
+@\+Company Microchip Technology Inc.
+
+@\+File Name \doxylink{tmr0_8h}{tmr0.\+h}
+
+@\+Summary This is the generated header file for the TMR0 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+@\+Description This header file provides APIs for TMR0. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+2 Device \+: PIC12\+F1572 Driver Version \+: 2.\+01 The generated drivers are tested against the following\+: Compiler \+: XC8 2.\+20 and above MPLAB \+: MPLAB X 5.\+40 Section\+: Included Files Section\+: TMR0 APIs @\+Summary Initializes the TMR0 module.
+
+@\+Description This function initializes the TMR0 Registers. This function must be called before any other TMR0 function is called.
+
+@\+Preconditions None
+
+@\+Param None
+
+@\+Returns None
+
+@\+Comment
+
+@\+Example {\ttfamily  \doxylink{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main()} \{ Initialize TMR0 module \doxylink{tmr0_8h_a73398a18b711af030af4db3c4c6c15e1}{TMR0\+\_\+\+Initialize()};}
+
+{\ttfamily Do something else... \} } Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tmr0_8c_a3090c3e2bcc310ef2111cd0db99090c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tmr0_8c_a73398a18b711af030af4db3c4c6c15e1}\index{tmr0.c@{tmr0.c}!TMR0\_Initialize@{TMR0\_Initialize}}
+\index{TMR0\_Initialize@{TMR0\_Initialize}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Initialize()}{TMR0\_Initialize()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a73398a18b711af030af4db3c4c6c15e1} 
+void TMR0\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tmr0_8c_a73398a18b711af030af4db3c4c6c15e1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tmr0_8c_a8a465e070e24fe06a488f952b089886d}\index{tmr0.c@{tmr0.c}!TMR0\_ISR@{TMR0\_ISR}}
+\index{TMR0\_ISR@{TMR0\_ISR}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_ISR()}{TMR0\_ISR()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a8a465e070e24fe06a488f952b089886d} 
+void TMR0\+\_\+\+ISR (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Summary Timer Interrupt Service Routine
+
+@\+Description Timer Interrupt Service Routine is called by the Interrupt Manager.
+
+@\+Returns None
+
+@\+Param None \Hypertarget{tmr0_8c_a091fd68f48dfccc6890ab47872b0e551}\index{tmr0.c@{tmr0.c}!TMR0\_ReadTimer@{TMR0\_ReadTimer}}
+\index{TMR0\_ReadTimer@{TMR0\_ReadTimer}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_ReadTimer()}{TMR0\_ReadTimer()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a091fd68f48dfccc6890ab47872b0e551} 
+uint8\+\_\+t TMR0\+\_\+\+Read\+Timer (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Summary Reads the TMR0 register.
+
+@\+Description This function reads the TMR0 register value and return it.
+
+@\+Preconditions Initialize the TMR0 before calling this function.
+
+@\+Param None
+
+@\+Returns This function returns the current value of TMR0 register.
+
+@\+Example {\ttfamily  Initialize TMR0 module Read the current value of TMR0 if(0 == \doxylink{tmr0_8h_a091fd68f48dfccc6890ab47872b0e551}{TMR0\+\_\+\+Read\+Timer()}) \{ Do something else...}
+
+{\ttfamily Reload the TMR value \doxylink{tmr0_8h_a61659c2dc0ff29595abe23b24cf81d14}{TMR0\+\_\+\+Reload()}; \} } \Hypertarget{tmr0_8c_a61659c2dc0ff29595abe23b24cf81d14}\index{tmr0.c@{tmr0.c}!TMR0\_Reload@{TMR0\_Reload}}
+\index{TMR0\_Reload@{TMR0\_Reload}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Reload()}{TMR0\_Reload()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a61659c2dc0ff29595abe23b24cf81d14} 
+void TMR0\+\_\+\+Reload (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+@\+Summary Reload the TMR0 register.
+
+@\+Description This function reloads the TMR0 register. This function must be called to write initial value into TMR0 register.
+
+@\+Preconditions Initialize the TMR0 before calling this function.
+
+@\+Param None
+
+@\+Returns None
+
+@\+Example {\ttfamily  while(1) \{ if(\+TMR0\+IF) \{ Do something else...}
+
+{\ttfamily clear the TMR0 interrupt flag TMR0\+IF = 0;}
+
+{\ttfamily Reload the initial value of TMR0 \doxylink{tmr0_8h_a61659c2dc0ff29595abe23b24cf81d14}{TMR0\+\_\+\+Reload()}; \} \} } \Hypertarget{tmr0_8c_a951111850fea5583b9f98b566b2e4508}\index{tmr0.c@{tmr0.c}!TMR0\_WriteTimer@{TMR0\_WriteTimer}}
+\index{TMR0\_WriteTimer@{TMR0\_WriteTimer}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_WriteTimer()}{TMR0\_WriteTimer()}}
+{\footnotesize\ttfamily \label{tmr0_8c_a951111850fea5583b9f98b566b2e4508} 
+void TMR0\+\_\+\+Write\+Timer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer\+Val}{}\end{DoxyParamCaption})}
+
+@\+Summary Writes the TMR0 register.
+
+@\+Description This function writes the TMR0 register. This function must be called after the initialization of TMR0.
+
+@\+Preconditions Initialize the TMR0 before calling this function.
+
+@\+Param timer\+Val -\/ Value to write into TMR0 register.
+
+@\+Returns None
+
+@\+Example {\ttfamily  \#define PERIOD 0x80 \#define ZERO 0x00}
+
+{\ttfamily  while(1) \{ Read the TMR0 register if(ZERO == \doxylink{tmr0_8h_a091fd68f48dfccc6890ab47872b0e551}{TMR0\+\_\+\+Read\+Timer()}) \{ Do something else...}
+
+{\ttfamily Write the TMR0 register TMR0\+\_\+\+Write\+Timer(\+PERIOD); \}}
+
+{\ttfamily Do something else... \} } 
+
+\label{doc-var-members}
+\Hypertarget{tmr0_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{tmr0_8c_aee53ca6ad8ef9a518fdc9a0a8af1fe91}\index{tmr0.c@{tmr0.c}!timer0ReloadVal@{timer0ReloadVal}}
+\index{timer0ReloadVal@{timer0ReloadVal}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{timer0ReloadVal}{timer0ReloadVal}}
+{\footnotesize\ttfamily \label{tmr0_8c_aee53ca6ad8ef9a518fdc9a0a8af1fe91} 
+volatile uint8\+\_\+t timer0\+Reload\+Val}
+
+TMR0 Generated Driver File
+
+@\+Company Microchip Technology Inc.
+
+@\+File Name \doxylink{tmr0_8c}{tmr0.\+c}
+
+@\+Summary This is the generated driver implementation file for the TMR0 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+@\+Description This source file provides APIs for TMR0. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+2 Device \+: PIC12\+F1572 Driver Version \+: 2.\+01 The generated drivers are tested against the following\+: Compiler \+: XC8 2.\+20 and above MPLAB \+: MPLAB X 5.\+40 Section\+: Included Files Section\+: Global Variables Definitions \Hypertarget{tmr0_8c_a1a08a465823afecd9ccddf909acf1fc5}\index{tmr0.c@{tmr0.c}!V\_COUNTER\_1ms@{V\_COUNTER\_1ms}}
+\index{V\_COUNTER\_1ms@{V\_COUNTER\_1ms}!tmr0.c@{tmr0.c}}
+\doxysubsubsection{\texorpdfstring{V\_COUNTER\_1ms}{V\_COUNTER\_1ms}}
+{\footnotesize\ttfamily \label{tmr0_8c_a1a08a465823afecd9ccddf909acf1fc5} 
+uint32\+\_\+t V\+\_\+\+COUNTER\+\_\+1ms = 0\+X00\hspace{0.3cm}{\ttfamily [static]}}
+
+Section\+: TMR0 APIs 

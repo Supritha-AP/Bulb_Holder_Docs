@@ -1,0 +1,15 @@
+<map id="SYSTEM_Initialize" name="SYSTEM_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,137,108"/>
+<area shape="rect" id="Node000002" href="$mcc_8c.html#a4777dd92514a7e4ef803f9e869006f5d" title=" " alt="" coords="192,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,78,184,42,204,34,206,39,186,46,101,83"/>
+<area shape="rect" id="Node000003" href="$pin__manager_8c.html#a50357774183a136d9490f64ad0d5c6cb" title=" " alt="" coords="185,56,359,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,84,169,80,170,85,138,89"/>
+<area shape="rect" id="Node000006" href="$tmr0_8c.html#a73398a18b711af030af4db3c4c6c15e1" title=" " alt="" coords="216,107,328,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="138,100,201,108,200,114,137,106"/>
+<area shape="rect" id="Node000007" href="$mcc_8c.html#a6de6e2435c7dc554df52111e28586835" title=" " alt="" coords="218,157,326,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="101,106,186,143,206,150,204,155,184,148,99,111"/>
+<area shape="rect" id="Node000004" href="$pin__manager_8c.html#a90d9184ba47473855ee66616bcd28a69" title=" " alt="" coords="407,31,618,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="359,57,391,54,392,59,360,63"/>
+<area shape="rect" id="Node000005" href="$pin__manager_8c.html#a47be93dc572229a90c3c39fd802cd4c3" title=" " alt="" coords="418,81,607,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="360,76,403,80,402,86,359,81"/>
+</map>

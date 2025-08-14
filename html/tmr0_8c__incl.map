@@ -1,0 +1,11 @@
+<map id="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/tmr0.c" name="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/tmr0.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,186,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="35,128,81,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,81,71,114,66,112,79,79"/>
+<area shape="rect" id="Node000003" href="$tmr0_8h.html" title=" " alt="" coords="105,128,163,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,79,126,112,121,114,108,81"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,203,120,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,157,106,191,101,188,124,154"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="144,203,218,229"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="145,154,167,188,162,191,140,157"/>
+</map>

@@ -1,0 +1,79 @@
+\doxysection{Bulb\+\_\+\+Holder\+\_\+code/\+IR\+\_\+\+LIGHT\+\_\+\+VER4(pic10f1572).X/mcc\+\_\+generated\+\_\+files/interrupt\+\_\+manager.h File Reference}
+\hypertarget{interrupt__manager_8h}{}\label{interrupt__manager_8h}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/interrupt\_manager.h@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/interrupt\_manager.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupt__manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{interrupt__manager_8h_ab801e88ce18e2d200429ffbaa67dbf2b}{INTERRUPT\+\_\+\+Global\+Interrupt\+Enable}}()
+\item 
+\#define \mbox{\hyperlink{interrupt__manager_8h_a5dfc9352c85bc78d317b8327ae7e6450}{INTERRUPT\+\_\+\+Global\+Interrupt\+Disable}}()
+\item 
+\#define \mbox{\hyperlink{interrupt__manager_8h_a35865b73bdecc073d43ad4e0c62187ea}{INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Enable}}()
+\item 
+\#define \mbox{\hyperlink{interrupt__manager_8h_a99647ba59dd01ba1dc3a6f0ca263ab8d}{INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Disable}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{interrupt__manager_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{interrupt__manager_8h_a5dfc9352c85bc78d317b8327ae7e6450}\index{interrupt\_manager.h@{interrupt\_manager.h}!INTERRUPT\_GlobalInterruptDisable@{INTERRUPT\_GlobalInterruptDisable}}
+\index{INTERRUPT\_GlobalInterruptDisable@{INTERRUPT\_GlobalInterruptDisable}!interrupt\_manager.h@{interrupt\_manager.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_GlobalInterruptDisable}{INTERRUPT\_GlobalInterruptDisable}}
+{\footnotesize\ttfamily \label{interrupt__manager_8h_a5dfc9352c85bc78d317b8327ae7e6450} 
+\#define INTERRUPT\+\_\+\+Global\+Interrupt\+Disable(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(INTCONbits.GIE\ =\ 0)}
+
+\end{DoxyCode}
+@\+Param none @\+Returns none @\+Description This macro will disable global interrupts. @\+Example \doxylink{interrupt__manager_8h_a5dfc9352c85bc78d317b8327ae7e6450}{INTERRUPT\+\_\+\+Global\+Interrupt\+Disable()}; \Hypertarget{interrupt__manager_8h_ab801e88ce18e2d200429ffbaa67dbf2b}\index{interrupt\_manager.h@{interrupt\_manager.h}!INTERRUPT\_GlobalInterruptEnable@{INTERRUPT\_GlobalInterruptEnable}}
+\index{INTERRUPT\_GlobalInterruptEnable@{INTERRUPT\_GlobalInterruptEnable}!interrupt\_manager.h@{interrupt\_manager.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_GlobalInterruptEnable}{INTERRUPT\_GlobalInterruptEnable}}
+{\footnotesize\ttfamily \label{interrupt__manager_8h_ab801e88ce18e2d200429ffbaa67dbf2b} 
+\#define INTERRUPT\+\_\+\+Global\+Interrupt\+Enable(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(INTCONbits.GIE\ =\ 1)}
+
+\end{DoxyCode}
+Generated Interrupt Manager Header File
+
+@\+Company\+: Microchip Technology Inc.
+
+@\+File Name\+: \doxylink{interrupt__manager_8h}{interrupt\+\_\+manager.\+h}
+
+@\+Summary\+: This is the Interrupt Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+@\+Description\+: This header file provides implementations for global interrupt handling. For individual peripheral handlers please see the peripheral driver for all modules selected in the GUI. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+0 Device \+: PIC12\+F1572 Driver Version \+: 2.\+03 The generated drivers are tested against the following\+: Compiler \+: XC8 2.\+10 and above or later MPLAB \+: MPLAB X 5.\+35 @\+Param none @\+Returns none @\+Description This macro will enable global interrupts. @\+Example \doxylink{interrupt__manager_8h_ab801e88ce18e2d200429ffbaa67dbf2b}{INTERRUPT\+\_\+\+Global\+Interrupt\+Enable()}; \Hypertarget{interrupt__manager_8h_a99647ba59dd01ba1dc3a6f0ca263ab8d}\index{interrupt\_manager.h@{interrupt\_manager.h}!INTERRUPT\_PeripheralInterruptDisable@{INTERRUPT\_PeripheralInterruptDisable}}
+\index{INTERRUPT\_PeripheralInterruptDisable@{INTERRUPT\_PeripheralInterruptDisable}!interrupt\_manager.h@{interrupt\_manager.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_PeripheralInterruptDisable}{INTERRUPT\_PeripheralInterruptDisable}}
+{\footnotesize\ttfamily \label{interrupt__manager_8h_a99647ba59dd01ba1dc3a6f0ca263ab8d} 
+\#define INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Disable(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(INTCONbits.PEIE\ =\ 0)}
+
+\end{DoxyCode}
+@\+Param none @\+Returns none @\+Description This macro will disable peripheral interrupts. @\+Example \doxylink{interrupt__manager_8h_a99647ba59dd01ba1dc3a6f0ca263ab8d}{INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Disable()}; \Hypertarget{interrupt__manager_8h_a35865b73bdecc073d43ad4e0c62187ea}\index{interrupt\_manager.h@{interrupt\_manager.h}!INTERRUPT\_PeripheralInterruptEnable@{INTERRUPT\_PeripheralInterruptEnable}}
+\index{INTERRUPT\_PeripheralInterruptEnable@{INTERRUPT\_PeripheralInterruptEnable}!interrupt\_manager.h@{interrupt\_manager.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_PeripheralInterruptEnable}{INTERRUPT\_PeripheralInterruptEnable}}
+{\footnotesize\ttfamily \label{interrupt__manager_8h_a35865b73bdecc073d43ad4e0c62187ea} 
+\#define INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Enable(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(INTCONbits.PEIE\ =\ 1)}
+
+\end{DoxyCode}
+@\+Param none @\+Returns none @\+Description This macro will enable peripheral interrupts. @\+Example \doxylink{interrupt__manager_8h_a35865b73bdecc073d43ad4e0c62187ea}{INTERRUPT\+\_\+\+Peripheral\+Interrupt\+Enable()}; 

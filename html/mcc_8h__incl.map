@@ -1,0 +1,22 @@
+<map id="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/mcc.h" name="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/mcc.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="238,5,436,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="76,187,123,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,48,170,58,104,72,48,91,27,102,14,114,9,123,9,131,19,149,39,166,64,180,61,185,36,171,15,153,3,133,4,121,9,110,24,97,46,86,102,67,169,53,237,43"/>
+<area shape="rect" id="Node000003" href="$device__config_8h.html" title=" " alt="" coords="23,112,136,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,67,131,109,130,104,252,62"/>
+<area shape="rect" id="Node000004" href="$pin__manager_8h.html" title=" " alt="" coords="160,112,266,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,67,245,105,241,100,295,62"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="305,187,369,213"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="335,65,332,100,332,139,335,171,330,172,326,139,326,100,330,64"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="537,187,611,213"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="437,43,504,53,570,67,626,86,647,97,662,110,667,121,668,131,659,150,640,167,617,182,614,177,637,163,654,147,663,130,662,122,657,114,644,102,624,91,569,73,503,59,436,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="424,112,487,139"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="377,62,428,100,425,105,374,66"/>
+<area shape="rect" id="Node000008" href="$interrupt__manager_8h.html" title=" " alt="" coords="511,112,648,139"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="417,62,532,104,530,109,415,67"/>
+<area shape="rect" id="Node000009" href="$tmr0_8h.html" title=" " alt="" coords="341,112,399,139"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="350,63,363,96,358,98,345,65"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="195,141,134,180,131,176,192,137"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="367,140,351,174,347,171,362,138"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="401,135,525,178,523,184,399,140"/>
+</map>

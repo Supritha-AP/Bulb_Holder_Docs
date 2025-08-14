@@ -1,0 +1,74 @@
+\doxysection{PIC10\+\_\+\+PIC12\+\_\+\+HEFlash.\+h}
+\hypertarget{_p_i_c10___p_i_c12___h_e_flash_8h_source}{}\label{_p_i_c10___p_i_c12___h_e_flash_8h_source}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/PIC10\_PIC12\_HEFlash.h@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/PIC10\_PIC12\_HEFlash.h}}
+\mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <xc.h>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Flash\ functions}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8h_acae54266aa27d783e227685599cfcc8c}{Unlock\_FLASH}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00010\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ SUBROUTINE}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ Start\ of\ required\ sequence\ to\ initiate\ erase\ and\ write\ cycles.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ Writes\ 55h,\ then\ AAh,\ to\ PMCON2\ (Flash\ programming\ unlock\ sequence).}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ Sets\ control\ bit\ WR\ of\ the\ PMCON1\ register\ to\ begin\ the\ erase\ operation.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ Waits\ for\ WR\ to\ clear.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ Clears\ WREN\ to\ inhibit\ programming/erasing\ of\ Flash\ program\ memory}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8h_af881fa0a439a3da7688698be738b74fd}{Write\_FLASH}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00021\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ SUBROUTINE}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ LoadS\ program\ memory\ write\ latches.}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ Write\ of\ program\ memory\ write\ latches\ to\ program\ memory}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#if\ defined(\_10F320)|(\_10LF320)}}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ Read\_FLASH(uint8\_t\ address);}
+\DoxyCodeLine{00030\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ SUBROUTINE}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ Reads\ Flash\ program\ memory\ location\ and\ places\ data\ in\ PMDATL\ \&\ PMDATH}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ uint16\_t\ ReadWrite\_HEFlash(uint8\_t\ rw,\ uint16\_t\ \mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8c_a718c1bf5a3bf21ebb980203b142e5b75}{data}},\ uint8\_t\ rowstartaddr);}
+\DoxyCodeLine{00038\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ MAIN-\/ROUTINE}}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ Writes\ 12\ bits\ of\ user\ data\ to\ the\ next\ available/open\ Flash\ program\ memory\ location\ (bits\ <11-\/0>)\ in\ specified\ page.}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ Reads\ 12-\/bit\ user\ data\ of\ last\ location\ written.\ }}
+\DoxyCodeLine{00042\ \textcolor{comment}{}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#if\ defined(\_10F322)|(\_10LF322)|(\_12LF1552)|(\_12F1501)|(\_12F1572)}}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ Read\_FLASH(uint16\_t\ address);}
+\DoxyCodeLine{00049\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ See\ void\ read\_FLASH(uint8\_t\ address);}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00053\ uint16\_t\ ReadWrite\_HEFlash(uint8\_t\ rw,\ uint8\_t\ \mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8c_a718c1bf5a3bf21ebb980203b142e5b75}{data}},\ uint16\_t\ rowstartaddr);}
+\DoxyCodeLine{00054\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ See\ uint8\_t\ readwrite\_HEFlash(uint8\_t\ data,\ uint8\_t\ rowstartaddr);}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_p_i_c10___p_i_c12___h_e_flash_8h_a7c51ac7c7b714a165b8a9f4767fd5551}{Save\_INTERRUPT}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00061\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ Save\ Interrupts}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00064\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+
+\end{DoxyCode}

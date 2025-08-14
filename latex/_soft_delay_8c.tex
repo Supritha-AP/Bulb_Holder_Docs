@@ -1,0 +1,104 @@
+\doxysection{Bulb\+\_\+\+Holder\+\_\+code/\+IR\+\_\+\+LIGHT\+\_\+\+VER4(pic10f1572).X/\+Soft\+Delay.c File Reference}
+\hypertarget{_soft_delay_8c}{}\label{_soft_delay_8c}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/SoftDelay.c@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/SoftDelay.c}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include "{}Soft\+Delay.\+h"{}}\newline
+Include dependency graph for Soft\+Delay.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_soft_delay_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_soft_delay_8c_a205d3aacf8e8595578f1d64fd317a10c}{get\+\_\+\+Delay\+Status}} (uint32\+\_\+t \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r, uint16\+\_\+t v\+\_\+\+Time\+Delay\+\_\+u16r)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_soft_delay_8c_afc305bf91915c1a4a4484ab843f652fb}{get\+\_\+\+Delay\+\_\+\+Time}} (uint32\+\_\+t \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+\_\+\+Starting\+Value\+\_\+u32r)
+\item 
+void \mbox{\hyperlink{_soft_delay_8c_a17486cb895bab505bb84d9c1de58f733}{get\+\_\+\+Delay\+\_\+\+Start\+\_\+vr}} (uint32\+\_\+t \texorpdfstring{$\ast$}{*}Start\+\_\+vr\+\_\+reset\+\_\+u32r)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_soft_delay_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_soft_delay_8c_a17486cb895bab505bb84d9c1de58f733}\index{SoftDelay.c@{SoftDelay.c}!get\_Delay\_Start\_vr@{get\_Delay\_Start\_vr}}
+\index{get\_Delay\_Start\_vr@{get\_Delay\_Start\_vr}!SoftDelay.c@{SoftDelay.c}}
+\doxysubsubsection{\texorpdfstring{get\_Delay\_Start\_vr()}{get\_Delay\_Start\_vr()}}
+{\footnotesize\ttfamily \label{_soft_delay_8c_a17486cb895bab505bb84d9c1de58f733} 
+void get\+\_\+\+Delay\+\_\+\+Start\+\_\+vr (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{Start\+\_\+vr\+\_\+reset\+\_\+u32r}{}\end{DoxyParamCaption})}
+
+@\+Summary This function is used to initialize soft delay of Initial parameter as zero.
+
+@\+Preconditions parameter should be a pointer variable
+
+@\+Param Start\+\_\+vr\+\_\+reset\+\_\+u32r
+
+@\+Returns Nothing return
+
+Input\+: the input parameter int x output \+: char buf function name \+: Gte\+\_\+\+Delay\+\_\+\+Start\+\_\+vr() discription \+: \DoxyHorRuler{0}
+ \Hypertarget{_soft_delay_8c_afc305bf91915c1a4a4484ab843f652fb}\index{SoftDelay.c@{SoftDelay.c}!get\_Delay\_Time@{get\_Delay\_Time}}
+\index{get\_Delay\_Time@{get\_Delay\_Time}!SoftDelay.c@{SoftDelay.c}}
+\doxysubsubsection{\texorpdfstring{get\_Delay\_Time()}{get\_Delay\_Time()}}
+{\footnotesize\ttfamily \label{_soft_delay_8c_afc305bf91915c1a4a4484ab843f652fb} 
+uint32\+\_\+t get\+\_\+\+Delay\+\_\+\+Time (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{v\+\_\+\+Timer\+\_\+\+Starting\+Value\+\_\+u32r}{}\end{DoxyParamCaption})}
+
+@\+Summary This function is used as to calculate time difference value.
+
+@\+Description This function will calculate time difference value upto 2 power 32 milli seconds. Note\+: make value of \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+\_\+\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+\_\+\+Current\+Value\+\_\+u32r as zero from where it will call. ~\newline
+
+
+@\+Preconditions Initialize \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+\_\+\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+\_\+\+Current\+Value\+\_\+u32r as zero.
+
+@\+Param v\+\_\+\+Timer\+\_\+\+Starting\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} get the starting timer value. v\+\_\+\+Timer\+\_\+\+Current\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} Get the current timer status value. ~\newline
+ v\+\_\+\+Time\+\_\+\+Diff\+\_\+\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} It holds the difference value
+
+@\+Returns v\+\_\+\+Time\+\_\+\+Diff\+\_\+\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} It returns the difference value Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{_soft_delay_8c_afc305bf91915c1a4a4484ab843f652fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_soft_delay_8c_afc305bf91915c1a4a4484ab843f652fb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_soft_delay_8c_a205d3aacf8e8595578f1d64fd317a10c}\index{SoftDelay.c@{SoftDelay.c}!get\_DelayStatus@{get\_DelayStatus}}
+\index{get\_DelayStatus@{get\_DelayStatus}!SoftDelay.c@{SoftDelay.c}}
+\doxysubsubsection{\texorpdfstring{get\_DelayStatus()}{get\_DelayStatus()}}
+{\footnotesize\ttfamily \label{_soft_delay_8c_a205d3aacf8e8595578f1d64fd317a10c} 
+bool get\+\_\+\+Delay\+Status (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r}{, }\item[{uint16\+\_\+t}]{v\+\_\+\+Time\+Delay\+\_\+u16r}{}\end{DoxyParamCaption})}
+
+@\+Summary This function is used as delay.
+
+@\+Description This function will be implemented to generate delay as much as user required. ~\newline
+
+
+@\+Preconditions Initialize \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r as zero.
+
+@\+Param v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} get the starting timer value. v\+\_\+\+Timer\+Current\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} Get the current timer status value. v\+\_\+\+Time\+Delay\+\_\+u16r -\/\texorpdfstring{$>$}{>} User to define any delay value im milliseconds .
+
+@\+Returns true -\/ Difference between \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r is equal to \texorpdfstring{$\ast$}{*}v\+\_\+\+Time\+Delay\+\_\+u16r then return TRUE false -\/ Difference between \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r is not equal to \texorpdfstring{$\ast$}{*}v\+\_\+\+Time\+Delay\+\_\+u16r then return FALSE Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_soft_delay_8c_a205d3aacf8e8595578f1d64fd317a10c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_soft_delay_8c_a205d3aacf8e8595578f1d64fd317a10c_icgraph}
+\end{center}
+\end{figure}

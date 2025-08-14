@@ -1,0 +1,18 @@
+<map id="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/pin_manager.h" name="Bulb_Holder_code/IR_LIGHT_VER4(pic10f1572).X/mcc_generated_files/pin_manager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="625,5,806,80"/>
+<area shape="rect" id="Node000002" href="$mcc_8h.html" title=" " alt="" coords="476,128,675,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="660,92,613,130,609,126,656,88"/>
+<area shape="rect" id="Node000008" href="$pin__manager_8c.html" title=" " alt="" coords="840,235,1020,309"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="762,90,898,233,894,236,758,93"/>
+<area shape="rect" id="Node000003" href="$_soft_delay_8h.html" title=" " alt="" coords="5,243,186,301"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,180,334,204,198,237,173,245,171,240,196,232,333,199,460,175"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title=" " alt="" coords="209,243,390,301"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="492,195,371,245,369,240,490,190"/>
+<area shape="rect" id="Node000006" href="$interrupt__manager_8c.html" title=" " alt="" coords="413,235,594,309"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="551,201,529,236,525,233,547,198"/>
+<area shape="rect" id="Node000007" href="$mcc_8c.html" title=" " alt="" coords="618,243,816,301"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="625,195,683,240,679,244,622,199"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="689,189,828,232,840,236,839,241,827,237,688,194"/>
+<area shape="rect" id="Node000004" href="$_soft_delay_8c.html" title=" " alt="" coords="5,357,186,416"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="98,317,98,357,93,357,93,317"/>
+</map>

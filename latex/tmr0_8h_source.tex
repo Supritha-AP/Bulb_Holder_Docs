@@ -1,0 +1,72 @@
+\doxysection{tmr0.\+h}
+\hypertarget{tmr0_8h_source}{}\label{tmr0_8h_source}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/tmr0.h@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/tmr0.h}}
+\mbox{\hyperlink{tmr0_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ (c)\ 2018\ Microchip\ Technology\ Inc.\ and\ its\ subsidiaries.\ }}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ \ \ \ Subject\ to\ your\ compliance\ with\ these\ terms,\ you\ may\ use\ Microchip\ software\ and\ any\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ \ derivatives\ exclusively\ with\ Microchip\ products.\ It\ is\ your\ responsibility\ to\ comply\ with\ third\ party\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ \ license\ terms\ applicable\ to\ your\ use\ of\ third\ party\ software\ (including\ open\ source\ software)\ that\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ may\ accompany\ Microchip\ software.}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ THIS\ SOFTWARE\ IS\ SUPPLIED\ BY\ MICROCHIP\ "{}AS\ IS"{}.\ NO\ WARRANTIES,\ WHETHER\ }}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ EXPRESS,\ IMPLIED\ OR\ STATUTORY,\ APPLY\ TO\ THIS\ SOFTWARE,\ INCLUDING\ ANY\ }}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ \ \ \ IMPLIED\ WARRANTIES\ OF\ NON-\/INFRINGEMENT,\ MERCHANTABILITY,\ AND\ FITNESS\ }}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ \ FOR\ A\ PARTICULAR\ PURPOSE.}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ IN\ NO\ EVENT\ WILL\ MICROCHIP\ BE\ LIABLE\ FOR\ ANY\ INDIRECT,\ SPECIAL,\ PUNITIVE,\ }}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ INCIDENTAL\ OR\ CONSEQUENTIAL\ LOSS,\ DAMAGE,\ COST\ OR\ EXPENSE\ OF\ ANY\ KIND\ }}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ WHATSOEVER\ RELATED\ TO\ THE\ SOFTWARE,\ HOWEVER\ CAUSED,\ EVEN\ IF\ MICROCHIP\ }}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ \ \ \ HAS\ BEEN\ ADVISED\ OF\ THE\ POSSIBILITY\ OR\ THE\ DAMAGES\ ARE\ FORESEEABLE.\ TO\ }}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ \ \ \ THE\ FULLEST\ EXTENT\ ALLOWED\ BY\ LAW,\ MICROCHIP'S\ TOTAL\ LIABILITY\ ON\ ALL\ }}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ \ \ \ CLAIMS\ IN\ ANY\ WAY\ RELATED\ TO\ THIS\ SOFTWARE\ WILL\ NOT\ EXCEED\ THE\ AMOUNT\ }}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ OF\ FEES,\ IF\ ANY,\ THAT\ YOU\ HAVE\ PAID\ DIRECTLY\ TO\ MICROCHIP\ FOR\ THIS\ }}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ SOFTWARE.}}
+\DoxyCodeLine{00045\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#ifndef\ TMR0\_H}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ TMR0\_H}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus\ \ }\textcolor{comment}{//\ Provide\ C++\ Compatibility}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ uint32\_t\ \mbox{\hyperlink{tmr0_8h_a3090c3e2bcc310ef2111cd0db99090c3}{get\_TIMER0Status}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_a73398a18b711af030af4db3c4c6c15e1}{TMR0\_Initialize}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00132\ uint8\_t\ \mbox{\hyperlink{tmr0_8h_a091fd68f48dfccc6890ab47872b0e551}{TMR0\_ReadTimer}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_a951111850fea5583b9f98b566b2e4508}{TMR0\_WriteTimer}}(uint8\_t\ timerVal);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00207\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_a61659c2dc0ff29595abe23b24cf81d14}{TMR0\_Reload}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00222\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_a8a465e070e24fe06a488f952b089886d}{TMR0\_ISR}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00241\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_a1b6adc623040b0e791871a0f9652a67f}{TMR0\_SetInterruptHandler}}(\textcolor{keywordtype}{void}\ (*\ InterruptHandler)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00259\ \textcolor{keyword}{extern}\ void\ (*\mbox{\hyperlink{tmr0_8h_a809211677d0753d6397e04afdbb945a3}{TMR0\_InterruptHandler}})(void);}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00277\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tmr0_8h_aab6153f25bf68ecb07d33a269e5b8dc4}{TMR0\_DefaultInterruptHandler}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus\ \ }\textcolor{comment}{//\ Provide\ C++\ Compatibility}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \ \ \ \ \}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TMR0\_H}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

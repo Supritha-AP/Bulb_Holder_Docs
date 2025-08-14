@@ -1,0 +1,295 @@
+\doxysection{Bulb\+\_\+\+Holder\+\_\+code/\+IR\+\_\+\+LIGHT\+\_\+\+VER4(pic10f1572).X/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/main.c@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/main.c}}
+{\ttfamily \#include "{}mcc\+\_\+generated\+\_\+files/mcc.\+h"{}}\newline
+{\ttfamily \#include "{}PIC10\+\_\+\+PIC12\+\_\+\+HEFlash.\+h"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_abc98e3adbe205cd3ab83d97150d0a845}{LIGHT}}~LATAbits.\+LATA1
+\item 
+\#define \mbox{\hyperlink{main_8c_ad76d1750a6cdeebd506bfcd6752554d2}{ON}}~1
+\item 
+\#define \mbox{\hyperlink{main_8c_a29e413f6725b2ba32d165ffaa35b01e5}{OFF}}~0
+\item 
+\#define \mbox{\hyperlink{main_8c_aecb4c8a9311ab20624a07e66011c88a4}{passed}}~1
+\item 
+\#define \mbox{\hyperlink{main_8c_a329e5e6be8249786438bb196e1383a0b}{failed}}~0
+\item 
+\#define \mbox{\hyperlink{main_8c_adf98def783ed54c623b03d104c302a21}{MIN\+\_\+\+RX\+\_\+\+FREEQUENCY}}~15
+\item 
+\#define \mbox{\hyperlink{main_8c_a2ac1722d2b2411a7e4e8ddbc1e69f32f}{LIGHT\+\_\+\+ADDR}}~0x0780
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8c_aab46d330a44aa497c2e62f09eea9c9de}{get\+\_\+\+Delay\+Status}} (uint32\+\_\+t \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r, uint16\+\_\+t v\+\_\+\+Time\+Delay\+\_\+u8r)
+\item 
+void \mbox{\hyperlink{main_8c_a76c479def9fb7a54844ac00d804bded2}{Sensing\+\_\+\+Receiver}} (void)
+\item 
+char \mbox{\hyperlink{main_8c_aab1f0aa6d04b71bf74edbc5ab5cb8a2a}{Sensing\+\_\+\+Validation}} (void)
+\item 
+void \mbox{\hyperlink{main_8c_a0ba4ceac65f1e64308ec2932ec40ab95}{LIGHT\+\_\+\+Trigger}} (unsigned char Status)
+\item 
+unsigned char \mbox{\hyperlink{main_8c_ae6780bda8f0b5a73edacc1f8318c47d4}{old\+\_\+light\+\_\+status}} (void)
+\item 
+void \mbox{\hyperlink{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8c_aa50dcc925c0677206a7ec31ae5876cf3}{Flag\+\_\+\+Fre\+Counter}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{main_8c_a8968adb0d909e10cc85e8f457c7e2187}{V\+\_\+\+Freequency\+Counter\+\_\+u32}} = 0
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{main_8c_a8a7739f4b94aad707edf65621fc287f0}{V\+\_\+\+Freequency\+\_\+u32}} = 0
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{main_8c_aa4eb53e7ea76b82e70e6271e24ee3c9f}{time\+\_\+\+Scanning\+\_\+\+Period}} = 0
+\item 
+uint16\+\_\+t \mbox{\hyperlink{main_8c_a393cfcc8842fb5ad826f7d77d596fb00}{time\+\_\+\+Scanning\+\_\+\+Period\+\_\+count}} = 250
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{main_8c_a73a135e15d1e62cef85d7a922599d051}{time\+\_\+\+EEPROM\+\_\+\+WRITE\+\_\+\+Period}} = 0
+\item 
+uint16\+\_\+t \mbox{\hyperlink{main_8c_ac4b0b98f3793da157b20c3b787ac2724}{time\+\_\+\+EEPROM\+\_\+\+WRITE\+\_\+count}} = 10
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{main_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8c_a329e5e6be8249786438bb196e1383a0b}\index{main.c@{main.c}!failed@{failed}}
+\index{failed@{failed}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{failed}{failed}}
+{\footnotesize\ttfamily \label{main_8c_a329e5e6be8249786438bb196e1383a0b} 
+\#define failed~0}
+
+\Hypertarget{main_8c_abc98e3adbe205cd3ab83d97150d0a845}\index{main.c@{main.c}!LIGHT@{LIGHT}}
+\index{LIGHT@{LIGHT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LIGHT}{LIGHT}}
+{\footnotesize\ttfamily \label{main_8c_abc98e3adbe205cd3ab83d97150d0a845} 
+\#define LIGHT~LATAbits.\+LATA1}
+
+Generated Main Source File
+
+Company\+: Microchip Technology Inc.
+
+File Name\+: \doxylink{main_8c}{main.\+c}
+
+Summary\+: This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+Description\+: This header file provides implementations for driver APIs for all modules selected in the GUI. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+4 Device \+: PIC16\+F18313 Driver Version \+: 2.\+00 \Hypertarget{main_8c_a2ac1722d2b2411a7e4e8ddbc1e69f32f}\index{main.c@{main.c}!LIGHT\_ADDR@{LIGHT\_ADDR}}
+\index{LIGHT\_ADDR@{LIGHT\_ADDR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LIGHT\_ADDR}{LIGHT\_ADDR}}
+{\footnotesize\ttfamily \label{main_8c_a2ac1722d2b2411a7e4e8ddbc1e69f32f} 
+\#define LIGHT\+\_\+\+ADDR~0x0780}
+
+\Hypertarget{main_8c_adf98def783ed54c623b03d104c302a21}\index{main.c@{main.c}!MIN\_RX\_FREEQUENCY@{MIN\_RX\_FREEQUENCY}}
+\index{MIN\_RX\_FREEQUENCY@{MIN\_RX\_FREEQUENCY}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MIN\_RX\_FREEQUENCY}{MIN\_RX\_FREEQUENCY}}
+{\footnotesize\ttfamily \label{main_8c_adf98def783ed54c623b03d104c302a21} 
+\#define MIN\+\_\+\+RX\+\_\+\+FREEQUENCY~15}
+
+\Hypertarget{main_8c_a29e413f6725b2ba32d165ffaa35b01e5}\index{main.c@{main.c}!OFF@{OFF}}
+\index{OFF@{OFF}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{OFF}{OFF}}
+{\footnotesize\ttfamily \label{main_8c_a29e413f6725b2ba32d165ffaa35b01e5} 
+\#define OFF~0}
+
+\Hypertarget{main_8c_ad76d1750a6cdeebd506bfcd6752554d2}\index{main.c@{main.c}!ON@{ON}}
+\index{ON@{ON}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ON}{ON}}
+{\footnotesize\ttfamily \label{main_8c_ad76d1750a6cdeebd506bfcd6752554d2} 
+\#define ON~1}
+
+\Hypertarget{main_8c_aecb4c8a9311ab20624a07e66011c88a4}\index{main.c@{main.c}!passed@{passed}}
+\index{passed@{passed}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{passed}{passed}}
+{\footnotesize\ttfamily \label{main_8c_aecb4c8a9311ab20624a07e66011c88a4} 
+\#define passed~1}
+
+
+
+\label{doc-func-members}
+\Hypertarget{main_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_aab46d330a44aa497c2e62f09eea9c9de}\index{main.c@{main.c}!get\_DelayStatus@{get\_DelayStatus}}
+\index{get\_DelayStatus@{get\_DelayStatus}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{get\_DelayStatus()}{get\_DelayStatus()}}
+{\footnotesize\ttfamily \label{main_8c_aab46d330a44aa497c2e62f09eea9c9de} 
+bool get\+\_\+\+Delay\+Status (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r}{, }\item[{uint16\+\_\+t}]{v\+\_\+\+Time\+Delay\+\_\+u16r}{}\end{DoxyParamCaption})}
+
+@\+Summary This function is used as delay.
+
+@\+Description This function will be implemented to generate delay as much as user required. ~\newline
+
+
+@\+Preconditions Initialize \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r as zero.
+
+@\+Param v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} get the starting timer value. v\+\_\+\+Timer\+Current\+Value\+\_\+u32r -\/\texorpdfstring{$>$}{>} Get the current timer status value. v\+\_\+\+Time\+Delay\+\_\+u16r -\/\texorpdfstring{$>$}{>} User to define any delay value im milliseconds .
+
+@\+Returns true -\/ Difference between \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r is equal to \texorpdfstring{$\ast$}{*}v\+\_\+\+Time\+Delay\+\_\+u16r then return TRUE false -\/ Difference between \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Starting\+Value\+\_\+u32r and \texorpdfstring{$\ast$}{*}v\+\_\+\+Timer\+Current\+Value\+\_\+u32r is not equal to \texorpdfstring{$\ast$}{*}v\+\_\+\+Time\+Delay\+\_\+u16r then return FALSE Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_aab46d330a44aa497c2e62f09eea9c9de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_aab46d330a44aa497c2e62f09eea9c9de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a0ba4ceac65f1e64308ec2932ec40ab95}\index{main.c@{main.c}!LIGHT\_Trigger@{LIGHT\_Trigger}}
+\index{LIGHT\_Trigger@{LIGHT\_Trigger}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LIGHT\_Trigger()}{LIGHT\_Trigger()}}
+{\footnotesize\ttfamily \label{main_8c_a0ba4ceac65f1e64308ec2932ec40ab95} 
+void LIGHT\+\_\+\+Trigger (\begin{DoxyParamCaption}\item[{unsigned char}]{Status}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a0ba4ceac65f1e64308ec2932ec40ab95_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667} 
+void main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_ae6780bda8f0b5a73edacc1f8318c47d4}\index{main.c@{main.c}!old\_light\_status@{old\_light\_status}}
+\index{old\_light\_status@{old\_light\_status}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{old\_light\_status()}{old\_light\_status()}}
+{\footnotesize\ttfamily \label{main_8c_ae6780bda8f0b5a73edacc1f8318c47d4} 
+unsigned char old\+\_\+light\+\_\+status (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{main_8c_ae6780bda8f0b5a73edacc1f8318c47d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{main_8c_ae6780bda8f0b5a73edacc1f8318c47d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a76c479def9fb7a54844ac00d804bded2}\index{main.c@{main.c}!Sensing\_Receiver@{Sensing\_Receiver}}
+\index{Sensing\_Receiver@{Sensing\_Receiver}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Sensing\_Receiver()}{Sensing\_Receiver()}}
+{\footnotesize\ttfamily \label{main_8c_a76c479def9fb7a54844ac00d804bded2} 
+void Sensing\+\_\+\+Receiver (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a76c479def9fb7a54844ac00d804bded2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{main_8c_a76c479def9fb7a54844ac00d804bded2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_aab1f0aa6d04b71bf74edbc5ab5cb8a2a}\index{main.c@{main.c}!Sensing\_Validation@{Sensing\_Validation}}
+\index{Sensing\_Validation@{Sensing\_Validation}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Sensing\_Validation()}{Sensing\_Validation()}}
+{\footnotesize\ttfamily \label{main_8c_aab1f0aa6d04b71bf74edbc5ab5cb8a2a} 
+char Sensing\+\_\+\+Validation (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{main_8c_aab1f0aa6d04b71bf74edbc5ab5cb8a2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{main_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_aa50dcc925c0677206a7ec31ae5876cf3}\index{main.c@{main.c}!Flag\_FreCounter@{Flag\_FreCounter}}
+\index{Flag\_FreCounter@{Flag\_FreCounter}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Flag\_FreCounter}{Flag\_FreCounter}}
+{\footnotesize\ttfamily \label{main_8c_aa50dcc925c0677206a7ec31ae5876cf3} 
+bool Flag\+\_\+\+Fre\+Counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+Generated Pin Manager File
+
+Company\+: Microchip Technology Inc.
+
+File Name\+: \doxylink{pin__manager_8c}{pin\+\_\+manager.\+c}
+
+Summary\+: This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+
+Description\+: This header file provides implementations for pin APIs for all pins selected in the GUI. Generation Information \+: Product Revision \+: PIC10 / PIC12 / PIC16 / PIC18 MCUs -\/ 1.\+81.\+0 Device \+: PIC12\+F1572 Driver Version \+: 2.\+11 The generated drivers are tested against the following\+: Compiler \+: XC8 2.\+10 and above MPLAB \+: MPLAB X 5.\+35
+
+Copyright (c) 2013 -\/ 2015 released Microchip Technology Inc. All rights reserved. \Hypertarget{main_8c_ac4b0b98f3793da157b20c3b787ac2724}\index{main.c@{main.c}!time\_EEPROM\_WRITE\_count@{time\_EEPROM\_WRITE\_count}}
+\index{time\_EEPROM\_WRITE\_count@{time\_EEPROM\_WRITE\_count}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{time\_EEPROM\_WRITE\_count}{time\_EEPROM\_WRITE\_count}}
+{\footnotesize\ttfamily \label{main_8c_ac4b0b98f3793da157b20c3b787ac2724} 
+uint16\+\_\+t time\+\_\+\+EEPROM\+\_\+\+WRITE\+\_\+count = 10}
+
+\Hypertarget{main_8c_a73a135e15d1e62cef85d7a922599d051}\index{main.c@{main.c}!time\_EEPROM\_WRITE\_Period@{time\_EEPROM\_WRITE\_Period}}
+\index{time\_EEPROM\_WRITE\_Period@{time\_EEPROM\_WRITE\_Period}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{time\_EEPROM\_WRITE\_Period}{time\_EEPROM\_WRITE\_Period}}
+{\footnotesize\ttfamily \label{main_8c_a73a135e15d1e62cef85d7a922599d051} 
+uint32\+\_\+t time\+\_\+\+EEPROM\+\_\+\+WRITE\+\_\+\+Period = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{main_8c_aa4eb53e7ea76b82e70e6271e24ee3c9f}\index{main.c@{main.c}!time\_Scanning\_Period@{time\_Scanning\_Period}}
+\index{time\_Scanning\_Period@{time\_Scanning\_Period}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{time\_Scanning\_Period}{time\_Scanning\_Period}}
+{\footnotesize\ttfamily \label{main_8c_aa4eb53e7ea76b82e70e6271e24ee3c9f} 
+uint32\+\_\+t time\+\_\+\+Scanning\+\_\+\+Period = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{main_8c_a393cfcc8842fb5ad826f7d77d596fb00}\index{main.c@{main.c}!time\_Scanning\_Period\_count@{time\_Scanning\_Period\_count}}
+\index{time\_Scanning\_Period\_count@{time\_Scanning\_Period\_count}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{time\_Scanning\_Period\_count}{time\_Scanning\_Period\_count}}
+{\footnotesize\ttfamily \label{main_8c_a393cfcc8842fb5ad826f7d77d596fb00} 
+uint16\+\_\+t time\+\_\+\+Scanning\+\_\+\+Period\+\_\+count = 250}
+
+\Hypertarget{main_8c_a8a7739f4b94aad707edf65621fc287f0}\index{main.c@{main.c}!V\_Freequency\_u32@{V\_Freequency\_u32}}
+\index{V\_Freequency\_u32@{V\_Freequency\_u32}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{V\_Freequency\_u32}{V\_Freequency\_u32}}
+{\footnotesize\ttfamily \label{main_8c_a8a7739f4b94aad707edf65621fc287f0} 
+uint32\+\_\+t V\+\_\+\+Freequency\+\_\+u32 = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{main_8c_a8968adb0d909e10cc85e8f457c7e2187}\index{main.c@{main.c}!V\_FreequencyCounter\_u32@{V\_FreequencyCounter\_u32}}
+\index{V\_FreequencyCounter\_u32@{V\_FreequencyCounter\_u32}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{V\_FreequencyCounter\_u32}{V\_FreequencyCounter\_u32}}
+{\footnotesize\ttfamily \label{main_8c_a8968adb0d909e10cc85e8f457c7e2187} 
+uint32\+\_\+t V\+\_\+\+Freequency\+Counter\+\_\+u32 = 0}
+

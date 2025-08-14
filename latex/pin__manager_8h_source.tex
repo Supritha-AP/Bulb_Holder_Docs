@@ -1,0 +1,102 @@
+\doxysection{pin\+\_\+manager.\+h}
+\hypertarget{pin__manager_8h_source}{}\label{pin__manager_8h_source}\index{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/pin\_manager.h@{Bulb\_Holder\_code/IR\_LIGHT\_VER4(pic10f1572).X/mcc\_generated\_files/pin\_manager.h}}
+\mbox{\hyperlink{pin__manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ (c)\ 2018\ Microchip\ Technology\ Inc.\ and\ its\ subsidiaries.\ }}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ \ \ \ Subject\ to\ your\ compliance\ with\ these\ terms,\ you\ may\ use\ Microchip\ software\ and\ any\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ \ derivatives\ exclusively\ with\ Microchip\ products.\ It\ is\ your\ responsibility\ to\ comply\ with\ third\ party\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ \ license\ terms\ applicable\ to\ your\ use\ of\ third\ party\ software\ (including\ open\ source\ software)\ that\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ may\ accompany\ Microchip\ software.}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ THIS\ SOFTWARE\ IS\ SUPPLIED\ BY\ MICROCHIP\ "{}AS\ IS"{}.\ NO\ WARRANTIES,\ WHETHER\ }}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ EXPRESS,\ IMPLIED\ OR\ STATUTORY,\ APPLY\ TO\ THIS\ SOFTWARE,\ INCLUDING\ ANY\ }}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ \ \ \ IMPLIED\ WARRANTIES\ OF\ NON-\/INFRINGEMENT,\ MERCHANTABILITY,\ AND\ FITNESS\ }}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ \ FOR\ A\ PARTICULAR\ PURPOSE.}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ IN\ NO\ EVENT\ WILL\ MICROCHIP\ BE\ LIABLE\ FOR\ ANY\ INDIRECT,\ SPECIAL,\ PUNITIVE,\ }}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ INCIDENTAL\ OR\ CONSEQUENTIAL\ LOSS,\ DAMAGE,\ COST\ OR\ EXPENSE\ OF\ ANY\ KIND\ }}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ WHATSOEVER\ RELATED\ TO\ THE\ SOFTWARE,\ HOWEVER\ CAUSED,\ EVEN\ IF\ MICROCHIP\ }}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ \ \ \ HAS\ BEEN\ ADVISED\ OF\ THE\ POSSIBILITY\ OR\ THE\ DAMAGES\ ARE\ FORESEEABLE.\ TO\ }}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ \ \ \ THE\ FULLEST\ EXTENT\ ALLOWED\ BY\ LAW,\ MICROCHIP'S\ TOTAL\ LIABILITY\ ON\ ALL\ }}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ \ \ \ CLAIMS\ IN\ ANY\ WAY\ RELATED\ TO\ THIS\ SOFTWARE\ WILL\ NOT\ EXCEED\ THE\ AMOUNT\ }}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ OF\ FEES,\ IF\ ANY,\ THAT\ YOU\ HAVE\ PAID\ DIRECTLY\ TO\ MICROCHIP\ FOR\ THIS\ }}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ SOFTWARE.}}
+\DoxyCodeLine{00045\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#ifndef\ PIN\_MANAGER\_H}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ PIN\_MANAGER\_H}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#include\ <xc.h>}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ INPUT\ \ \ 1}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ OUTPUT\ \ 0}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ HIGH\ \ \ \ 1}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ LOW\ \ \ \ \ 0}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ ANALOG\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ DIGITAL\ \ \ \ \ 0}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ PULL\_UP\_ENABLED\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ PULL\_UP\_DISABLED\ \ \ \ \ 0}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ get/set\ IO\_RA0\ aliases}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ IO\_RA0\_TRIS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TRISAbits.TRISA0}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ IO\_RA0\_LAT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LATAbits.LATA0}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ IO\_RA0\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PORTAbits.RA0}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ IO\_RA0\_WPU\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ WPUAbits.WPUA0}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ IO\_RA0\_OD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ODCONAbits.ODA0}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ IO\_RA0\_ANS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSELAbits.ANSA0}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetHigh()\ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA0\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetLow()\ \ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA0\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ IO\_RA0\_Toggle()\ \ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA0\ =\ \string~LATAbits.LATA0;\ \}\ while(0)}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ IO\_RA0\_GetValue()\ \ \ \ \ \ \ \ \ \ \ PORTAbits.RA0}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetDigitalInput()\ \ \ \ do\ \{\ TRISAbits.TRISA0\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetDigitalOutput()\ \ \ do\ \{\ TRISAbits.TRISA0\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetPullup()\ \ \ \ \ \ \ \ \ \ do\ \{\ WPUAbits.WPUA0\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ IO\_RA0\_ResetPullup()\ \ \ \ \ \ \ \ do\ \{\ WPUAbits.WPUA0\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetPushPull()\ \ \ \ \ \ \ \ do\ \{\ ODCONAbits.ODA0\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetOpenDrain()\ \ \ \ \ \ \ do\ \{\ ODCONAbits.ODA0\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetAnalogMode()\ \ \ \ \ \ do\ \{\ ANSELAbits.ANSA0\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ IO\_RA0\_SetDigitalMode()\ \ \ \ \ do\ \{\ ANSELAbits.ANSA0\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{comment}{//\ get/set\ IO\_RA5\ aliases}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ IO\_RA5\_TRIS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TRISAbits.TRISA5}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ IO\_RA5\_LAT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LATAbits.LATA5}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#define\ IO\_RA5\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PORTAbits.RA5}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ IO\_RA5\_WPU\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ WPUAbits.WPUA5}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ IO\_RA5\_OD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ODCONAbits.ODA5}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetHigh()\ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA5\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetLow()\ \ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA5\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ IO\_RA5\_Toggle()\ \ \ \ \ \ \ \ \ \ \ \ \ do\ \{\ LATAbits.LATA5\ =\ \string~LATAbits.LATA5;\ \}\ while(0)}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ IO\_RA5\_GetValue()\ \ \ \ \ \ \ \ \ \ \ PORTAbits.RA5}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetDigitalInput()\ \ \ \ do\ \{\ TRISAbits.TRISA5\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetDigitalOutput()\ \ \ do\ \{\ TRISAbits.TRISA5\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetPullup()\ \ \ \ \ \ \ \ \ \ do\ \{\ WPUAbits.WPUA5\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#define\ IO\_RA5\_ResetPullup()\ \ \ \ \ \ \ \ do\ \{\ WPUAbits.WPUA5\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetPushPull()\ \ \ \ \ \ \ \ do\ \{\ ODCONAbits.ODA5\ =\ 0;\ \}\ while(0)}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ IO\_RA5\_SetOpenDrain()\ \ \ \ \ \ \ do\ \{\ ODCONAbits.ODA5\ =\ 1;\ \}\ while(0)}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pin__manager_8h_a50357774183a136d9490f64ad0d5c6cb}{PIN\_MANAGER\_Initialize}}\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pin__manager_8h_a6ff320d017cf9b99ba9045f24d7ec896}{PIN\_MANAGER\_IOC}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pin__manager_8h_aee544b5ff08363d3bc72fc876be76eb3}{IOCAF0\_ISR}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00163\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pin__manager_8h_a47be93dc572229a90c3c39fd802cd4c3}{IOCAF0\_SetInterruptHandler}}(\textcolor{keywordtype}{void}\ (*\ InterruptHandler)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00187\ \textcolor{keyword}{extern}\ void\ (*\mbox{\hyperlink{pin__manager_8c_ad640af04cf3837121bf3230f4a1a7d02}{IOCAF0\_InterruptHandler}})(void);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00211\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pin__manager_8h_a90d9184ba47473855ee66616bcd28a69}{IOCAF0\_DefaultInterruptHandler}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PIN\_MANAGER\_H}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

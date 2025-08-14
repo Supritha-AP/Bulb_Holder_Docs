@@ -1,0 +1,357 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1572 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"87 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\main.c
+[v _main main `(v  1 e 1 0 ]
+"145
+[v _Sensing_Receiver Sensing_Receiver `(v  1 e 1 0 ]
+"170
+[v _Sensing_Validation Sensing_Validation `(uc  1 e 1 0 ]
+"189
+[v _LIGHT_Trigger LIGHT_Trigger `(v  1 e 1 0 ]
+"201
+[v _old_light_status old_light_status `(uc  1 e 1 0 ]
+"52 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"59
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"69
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"59 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"131
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"143
+[v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
+"158
+[v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
+"165
+[v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"109
+[v _get_TIMER0Status get_TIMER0Status `(ul  1 e 4 0 ]
+"114
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"89 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\PIC10_PIC12_HEFlash.c
+[v _ReadWrite_HEFlash ReadWrite_HEFlash `(us  1 e 2 0 ]
+"164
+[v _Read_FLASH Read_FLASH `(v  1 e 1 0 ]
+"177
+[v _Unlock_FLASH Unlock_FLASH `(v  1 e 1 0 ]
+"190
+[v _Write_FLASH Write_FLASH `(v  1 e 1 0 ]
+"44 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\SoftDelay.c
+[v _get_DelayStatus get_DelayStatus `(a  1 e 1 0 ]
+"87
+[v _get_Delay_Time get_Delay_Time `(ul  1 e 4 0 ]
+"352 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic12f1572.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S162 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"375
+[s S171 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S176 . 1 `S162 1 . 1 0 `S171 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES176  1 e 1 @11 ]
+"593
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"915
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1078
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S50 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1101
+[s S59 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S64 . 1 `S50 1 . 1 0 `S59 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES64  1 e 1 @149 ]
+"1218
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1277
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1335
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1713
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S355 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1731
+[s S362 . 1 `uc 1 LATA 1 0 :6:0 
+]
+[u S364 . 1 `S355 1 . 1 0 `S362 1 . 1 0 ]
+[v _LATAbits LATAbits `VES364  1 e 1 @268 ]
+"1915
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2131
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2243
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2290
+[v _PMADR PMADR `VEus  1 e 2 @401 ]
+"2337
+[v _PMDAT PMDAT `VEus  1 e 2 @403 ]
+"2364
+[v _PMDATH PMDATH `VEuc  1 e 1 @404 ]
+"2384
+[v _PMCON1 PMCON1 `VEuc  1 e 1 @405 ]
+"2440
+[v _PMCON2 PMCON2 `VEuc  1 e 1 @406 ]
+"2744
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"2802
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"2855
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"2908
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+[s S130 . 1 `uc 1 IOCAP0 1 0 :1:0 
+`uc 1 IOCAP1 1 0 :1:1 
+`uc 1 IOCAP2 1 0 :1:2 
+`uc 1 IOCAP3 1 0 :1:3 
+`uc 1 IOCAP4 1 0 :1:4 
+`uc 1 IOCAP5 1 0 :1:5 
+]
+"2984
+[s S137 . 1 `uc 1 IOCAP 1 0 :6:0 
+]
+[u S139 . 1 `S130 1 . 1 0 `S137 1 . 1 0 ]
+[v _IOCAPbits IOCAPbits `VES139  1 e 1 @913 ]
+[s S108 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+`uc 1 IOCAN4 1 0 :1:4 
+`uc 1 IOCAN5 1 0 :1:5 
+]
+"3042
+[s S115 . 1 `uc 1 IOCAN 1 0 :6:0 
+]
+[u S117 . 1 `S108 1 . 1 0 `S115 1 . 1 0 ]
+[v _IOCANbits IOCANbits `VES117  1 e 1 @914 ]
+[s S86 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+]
+"3100
+[s S93 . 1 `uc 1 IOCAF 1 0 :6:0 
+]
+[u S95 . 1 `S86 1 . 1 0 `S93 1 . 1 0 ]
+[v _IOCAFbits IOCAFbits `VES95  1 e 1 @915 ]
+"8579
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"9830
+[v _RD RD `VEb  1 e 0 @3240 ]
+"10112
+[v _WR WR `VEb  1 e 0 @3241 ]
+"10115
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"58 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\main.c
+[v _V_FreequencyCounter_u32 V_FreequencyCounter_u32 `ul  1 e 4 0 ]
+"59
+[v _V_Freequency_u32 V_Freequency_u32 `ul  1 s 4 V_Freequency_u32 ]
+"61
+[v _time_Scanning_Period time_Scanning_Period `ul  1 s 4 time_Scanning_Period ]
+"64
+[v _time_EEPROM_WRITE_Period time_EEPROM_WRITE_Period `ul  1 s 4 time_EEPROM_WRITE_Period ]
+"52 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/pin_manager.c
+[v _Flag_FreCounter Flag_FreCounter `a  1 e 1 0 ]
+"56
+[v _IOCAF0_InterruptHandler IOCAF0_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"63
+[v _V_COUNTER_1ms V_COUNTER_1ms `ul  1 s 4 V_COUNTER_1ms ]
+"54 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\PIC10_PIC12_HEFlash.c
+[v _SaveInt SaveInt `uc  1 e 1 0 ]
+"87 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"109
+[v main@V_LightStatus V_LightStatus `a  1 a 1 23 ]
+"108
+[v main@V_Keypad_Long_Press V_Keypad_Long_Press `a  1 a 1 22 ]
+"137
+} 0
+"201
+[v _old_light_status old_light_status `(uc  1 e 1 0 ]
+{
+"203
+[v old_light_status@V_light_status_on V_light_status_on `uc  1 a 1 11 ]
+"206
+} 0
+"89 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\PIC10_PIC12_HEFlash.c
+[v _ReadWrite_HEFlash ReadWrite_HEFlash `(us  1 e 2 0 ]
+{
+[v ReadWrite_HEFlash@rw rw `uc  1 a 1 wreg ]
+"90
+[v ReadWrite_HEFlash@addr addr `us  1 a 2 7 ]
+"100
+[v ReadWrite_HEFlash@cnt cnt `uc  1 a 1 10 ]
+"89
+[v ReadWrite_HEFlash@rw rw `uc  1 a 1 wreg ]
+[v ReadWrite_HEFlash@data data `uc  1 p 1 2 ]
+[v ReadWrite_HEFlash@rowstartaddr rowstartaddr `us  1 p 2 3 ]
+"95
+[v ReadWrite_HEFlash@rw rw `uc  1 a 1 9 ]
+"138
+} 0
+"190
+[v _Write_FLASH Write_FLASH `(v  1 e 1 0 ]
+{
+"195
+} 0
+"177
+[v _Unlock_FLASH Unlock_FLASH `(v  1 e 1 0 ]
+{
+"183
+} 0
+"164
+[v _Read_FLASH Read_FLASH `(v  1 e 1 0 ]
+{
+[v Read_FLASH@address address `us  1 p 2 0 ]
+"169
+} 0
+"189 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\main.c
+[v _LIGHT_Trigger LIGHT_Trigger `(v  1 e 1 0 ]
+{
+[v LIGHT_Trigger@Status Status `uc  1 a 1 wreg ]
+[v LIGHT_Trigger@Status Status `uc  1 a 1 wreg ]
+"191
+[v LIGHT_Trigger@Status Status `uc  1 a 1 0 ]
+"192
+} 0
+"170
+[v _Sensing_Validation Sensing_Validation `(uc  1 e 1 0 ]
+{
+"180
+} 0
+"145
+[v _Sensing_Receiver Sensing_Receiver `(v  1 e 1 0 ]
+{
+"162
+} 0
+"44 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\SoftDelay.c
+[v _get_DelayStatus get_DelayStatus `(a  1 e 1 0 ]
+{
+[v get_DelayStatus@v_TimerStartingValue_u32r v_TimerStartingValue_u32r `*.4ul  1 a 1 wreg ]
+"46
+[v get_DelayStatus@v_TimeDifference_Value_u32r v_TimeDifference_Value_u32r `ul  1 a 4 17 ]
+"44
+[v get_DelayStatus@v_TimerStartingValue_u32r v_TimerStartingValue_u32r `*.4ul  1 a 1 wreg ]
+[v get_DelayStatus@v_TimeDelay_u16r v_TimeDelay_u16r `us  1 p 2 8 ]
+"46
+[v get_DelayStatus@v_TimerStartingValue_u32r v_TimerStartingValue_u32r `*.4ul  1 a 1 21 ]
+"57
+} 0
+"87
+[v _get_Delay_Time get_Delay_Time `(ul  1 e 4 0 ]
+{
+[v get_Delay_Time@v_Timer_StartingValue_u32r v_Timer_StartingValue_u32r `*.4ul  1 a 1 wreg ]
+"89
+[v get_Delay_Time@v_Timer_CurrentValue_u32r v_Timer_CurrentValue_u32r `ul  1 a 4 12 ]
+[v get_Delay_Time@v_Time_Diff_Value_u32r v_Time_Diff_Value_u32r `ul  1 a 4 8 ]
+"87
+[v get_Delay_Time@v_Timer_StartingValue_u32r v_Timer_StartingValue_u32r `*.4ul  1 a 1 wreg ]
+"92
+[v get_Delay_Time@v_Timer_StartingValue_u32r v_Timer_StartingValue_u32r `*.4ul  1 a 1 16 ]
+"112
+} 0
+"109 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/tmr0.c
+[v _get_TIMER0Status get_TIMER0Status `(ul  1 e 4 0 ]
+{
+"112
+} 0
+"50 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"57
+} 0
+"69
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"64 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"59 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"129
+} 0
+"158
+[v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCAF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"160
+} 0
+"59 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"67
+} 0
+"52 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"63
+} 0
+"114 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"121
+} 0
+"131 C:\Users\Sony\Desktop\SMART BULB HOLDER\Bulb_Holder_code\Bulb_Holder_code\IR_LIGHT_VER4(pic10f1572).X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"138
+} 0
+"143
+[v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
+{
+"153
+} 0
+"165
+[v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"168
+} 0
